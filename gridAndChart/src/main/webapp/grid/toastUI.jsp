@@ -9,7 +9,7 @@
 <script src="https://uicdn.toast.com/grid/latest/tui-grid.js"></script>
 </head>
 <body>
-toastUI
+<h1>toastUI</h1>
 <input type="button" value="home" onclick="location.href='<%=request.getContextPath()%>/index.jsp'">
 <br>
    <div id="grid"></div>

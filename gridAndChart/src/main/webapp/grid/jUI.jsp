@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-JUI
+<h1>JUI</h1>
 <input type="button" value="home" onclick="location.href='<%=request.getContextPath()%>/index.jsp'">
 <br>
 </body>
