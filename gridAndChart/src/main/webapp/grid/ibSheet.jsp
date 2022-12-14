@@ -1,0 +1,483 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src='https://www.ibsheet.com/ibleaders.js'></script>
+<script src='https://www.ibsheet.com/demo/js/lib/sheet/ibsheetinfo.js'></script>
+<script src='https://www.ibsheet.com/demo/js/lib/sheet/ibsheet.js'></script>
+<script src='https://www.ibsheet.com/demo/js/lib/sheet/ibsheet-global.js'></script>
+</head>
+<body>
+<h1>IBSheet</h1>
+<input type="button" value="home" onclick="location.href='<%=request.getContextPath()%>/index.jsp'">
+<div style='padding-bottom:10px;'></div>
+<div id='ib-container'></div>
+
+<script>
+var ib = {
+	    initialize: function() {
+	        var initData = {
+	            "Cfg": {
+	                "AutoFitColWidth": "search|resize|init|colhidden|rowtransaction",
+	                "DeferredVScroll": 1
+	            },
+	            "HeaderMode": {},
+	            "Cols": [{
+	                "Header": "NO",
+	                "Type": "Seq",
+	                "Align": "Center",
+	                "SaveName": "seq",
+	                "MinWidth": 30,
+	                "Width": 53
+	            }, {
+	                "Header": "이름",
+	                "Type": "Text",
+	                "Align": "Center",
+	                "SaveName": "sName",
+	                "Width": 57
+	            }, {
+	                "Header": "급여",
+	                "Type": "Text",
+	                "Align": "Center",
+	                "SaveName": "sMoney",
+	                "Format": "#*** 만원",
+	                "MinWidth": 80,
+	                "Width": 142
+	            }, {
+	                "Header": "전화번호",
+	                "Type": "Text",
+	                "Align": "Center",
+	                "SaveName": "sPhone",
+	                "Format": "PhoneNo",
+	                "MinWidth": 100,
+	                "Width": 178
+	            }, {
+	                "Header": "주민/사업자 번호",
+	                "Type": "Text",
+	                "Align": "Center",
+	                "SaveName": "sId",
+	                "Format": ["IdNo", "SaupNo"],
+	                "ShowMobile": 0,
+	                "Width": 171
+	            }, {
+	                "Header": "우편번호",
+	                "Type": "Text",
+	                "Align": "Center",
+	                "SaveName": "sPostNo",
+	                "Format": "PostNo",
+	                "ShowMobile": 0,
+	                "Width": 98
+	            }, {
+	                "Header": "주소",
+	                "Type": "Text",
+	                "Align": "Center",
+	                "SaveName": "sAddr",
+	                "ShowMobile": 0,
+	                "Width": 58
+	            }, {
+	                "Header": "카드번호",
+	                "Type": "Text",
+	                "Align": "Center",
+	                "SaveName": "sCard",
+	                "Format": "CardNo",
+	                "MinWidth": 100,
+	                "ShowMobile": 0,
+	                "Width": 179
+	            }, {
+	                "Header": "사용자 임의 포맷",
+	                "Type": "Text",
+	                "Align": "Center",
+	                "SaveName": "sCustom",
+	                "Format": "###-**-##",
+	                "ShowMobile": 0,
+	                "Width": 170
+	            }]
+	        };
+
+	        var container = $("#ib-container")[0];
+	        createIBSheet2(container, "mySheet", "100%", "284px");
+
+	        IBS_InitSheet(mySheet, initData);
+
+	        this.doAction();
+	    },
+	    data: {
+	        "data": [{
+	            "sName": "황정열",
+	            "sMoney": "5000",
+	            "sPhone": "01015368874",
+	            "sId": "801221384251",
+	            "sAddr": "서울",
+	            "sPostNo": "137765",
+	            "sCard": "1234123412341234",
+	            "sCustom": "1012220"
+	        }, {
+	            "sName": "강대호",
+	            "sMoney": "4700",
+	            "sPhone": "021231234",
+	            "sId": "807151852148",
+	            "sAddr": "경기",
+	            "sPostNo": "142571",
+	            "sCard": "5461258478966655",
+	            "sCustom": "675617"
+	        }, {
+	            "sName": "김미경",
+	            "sMoney": "3900",
+	            "sPhone": "04321525555",
+	            "sId": "138206820",
+	            "sAddr": "강원",
+	            "sPostNo": "570154",
+	            "sCard": "8547955425411567",
+	            "sCustom": "4180951"
+	        }, {
+	            "sName": "김선희",
+	            "sMoney": "3400",
+	            "sPhone": "01011112222",
+	            "sId": "6098204963",
+	            "sAddr": "경기",
+	            "sPostNo": "843521",
+	            "sCard": "1234123412341234",
+	            "sCustom": "321700"
+	        }, {
+	            "sName": "최세희",
+	            "sMoney": "3200",
+	            "sPhone": "01674856874",
+	            "sId": "405142384211",
+	            "sAddr": "경기",
+	            "sPostNo": "235552",
+	            "sCard": "4587998856552145",
+	            "sCustom": "2750801"
+	        }, {
+	            "sName": "이명희",
+	            "sMoney": "2900",
+	            "sPhone": "0101538874",
+	            "sId": "801221384251",
+	            "sAddr": "서울",
+	            "sPostNo": "615252",
+	            "sCard": "1234123412341234",
+	            "sCustom": "2571901"
+	        }, {
+	            "sName": "노효일",
+	            "sMoney": "2300",
+	            "sPhone": "0215368874",
+	            "sId": "506243051223",
+	            "sAddr": "서울",
+	            "sPostNo": "736566",
+	            "sCard": "8585666185411125",
+	            "sCustom": "1520201"
+	        }, {
+	            "sName": "원영국",
+	            "sMoney": "2800",
+	            "sPhone": "01075116521",
+	            "sId": "2118204825",
+	            "sAddr": "경기",
+	            "sPostNo": "951137",
+	            "sCard": "7514441556512533",
+	            "sCustom": "2557001"
+	        }, {
+	            "sName": "이지선",
+	            "sMoney": "2400",
+	            "sPhone": "025815421",
+	            "sId": "1298261319",
+	            "sAddr": "서울",
+	            "sPostNo": "515426",
+	            "sCard": "6841563125655524",
+	            "sCustom": "2007501"
+	        }, {
+	            "sName": "김상도",
+	            "sMoney": "4000",
+	            "sPhone": "0425741245",
+	            "sId": "507142063425",
+	            "sAddr": "경기",
+	            "sPostNo": "751123",
+	            "sCard": "6666555522223333",
+	            "sCustom": "4290851"
+	        }, {
+	            "sName": "한보라",
+	            "sMoney": "2800",
+	            "sPhone": "01022116587",
+	            "sId": "2098200597",
+	            "sAddr": "서울",
+	            "sPostNo": "681521",
+	            "sCard": "9999888855552222",
+	            "sCustom": "1959501"
+	        }, {
+	            "sName": "장태우",
+	            "sMoney": "2800",
+	            "sPhone": "0557256541",
+	            "sId": "5068272842",
+	            "sAddr": "서울",
+	            "sPostNo": "354112",
+	            "sCard": "3333444455556666",
+	            "sCustom": "1959501"
+	        }, {
+	            "sName": "정필석",
+	            "sMoney": "4000",
+	            "sPhone": "0262642080",
+	            "sId": "1298263035",
+	            "sAddr": "경기",
+	            "sPostNo": "846311",
+	            "sCard": "4444222211113255",
+	            "sCustom": "3851201"
+	        }, {
+	            "sName": "조성목",
+	            "sMoney": "4100",
+	            "sPhone": "0261254045",
+	            "sId": "410102263574",
+	            "sAddr": "경기",
+	            "sPostNo": "5153655",
+	            "sCard": "5641122315415133",
+	            "sCustom": "6313710"
+	        }, {
+	            "sName": "유봉근",
+	            "sMoney": "4200",
+	            "sPhone": "022222222",
+	            "sId": "4098272390",
+	            "sAddr": "서울",
+	            "sPostNo": "412132",
+	            "sCard": "8584154122235565",
+	            "sCustom": "5187601"
+	        }, {
+	            "sName": "오필환",
+	            "sMoney": "3700",
+	            "sPhone": "01098415521",
+	            "sId": "2118208651",
+	            "sAddr": "서울",
+	            "sPostNo": "355111",
+	            "sCard": "3554455516545665",
+	            "sCustom": "3412501"
+	        }, {
+	            "sName": "송복석",
+	            "sMoney": "3900",
+	            "sPhone": "0435746521",
+	            "sId": "703301678921",
+	            "sAddr": "경기",
+	            "sPostNo": "512321",
+	            "sCard": "5546555111415351",
+	            "sCustom": "3871701"
+	        }, {
+	            "sName": "김남연",
+	            "sMoney": "3600",
+	            "sPhone": "0545615477",
+	            "sId": "206232384536",
+	            "sAddr": "서울",
+	            "sPostNo": "154234",
+	            "sCard": "5655154415412335",
+	            "sCustom": "3500701"
+	        }, {
+	            "sName": "한혜선",
+	            "sMoney": "2900",
+	            "sPhone": "025555501",
+	            "sId": "1298261319",
+	            "sAddr": "서울",
+	            "sPostNo": "541657",
+	            "sCard": "1234123412341234",
+	            "sCustom": "2746001"
+	        }, {
+	            "sName": "조미미",
+	            "sMoney": "2500",
+	            "sPhone": "01065840714",
+	            "sId": "1108264699",
+	            "sAddr": "서울",
+	            "sPostNo": "741351",
+	            "sCard": "5461258478966655",
+	            "sCustom": "2297001"
+	        }, {
+	            "sName": "고은혜",
+	            "sMoney": "2600",
+	            "sPhone": "0423522541",
+	            "sId": "1298261207",
+	            "sAddr": "서울",
+	            "sPostNo": "256165",
+	            "sCard": "8547955425411567",
+	            "sCustom": "2390701"
+	        }, {
+	            "sName": "성미열",
+	            "sMoney": "2700",
+	            "sPhone": "0335841152",
+	            "sId": "801221384251",
+	            "sAddr": "서울",
+	            "sPostNo": "984561",
+	            "sCard": "1234123412341234",
+	            "sCustom": "2409001"
+	        }, {
+	            "sName": "김영중",
+	            "sMoney": "2800",
+	            "sPhone": "0325889885",
+	            "sId": "807151852148",
+	            "sAddr": "인천",
+	            "sPostNo": "137765",
+	            "sCard": "4587998856552145",
+	            "sCustom": "2871101"
+	        }, {
+	            "sName": "김기호",
+	            "sMoney": "3800",
+	            "sPhone": "01075116521",
+	            "sId": "138206820",
+	            "sAddr": "서울",
+	            "sPostNo": "561465",
+	            "sCard": "1234123412341234",
+	            "sCustom": "3709801"
+	        }, {
+	            "sName": "하태선",
+	            "sMoney": "2800",
+	            "sPhone": "025815421",
+	            "sId": "6098204963",
+	            "sAddr": "서울",
+	            "sPostNo": "846315",
+	            "sCard": "8585666185411125",
+	            "sCustom": "2415001"
+	        }, {
+	            "sName": "김정민",
+	            "sMoney": "3200",
+	            "sPhone": "0425741245",
+	            "sId": "405142384211",
+	            "sAddr": "경기",
+	            "sPostNo": "446123",
+	            "sCard": "7514441556512533",
+	            "sCustom": "2989001"
+	        }, {
+	            "sName": "장성우",
+	            "sMoney": "3700",
+	            "sPhone": "01022116587",
+	            "sId": "801221384251",
+	            "sAddr": "서울",
+	            "sPostNo": "846311",
+	            "sCard": "6841563125655524",
+	            "sCustom": "3880201"
+	        }, {
+	            "sName": "강윤식",
+	            "sMoney": "3500",
+	            "sPhone": "0557256541",
+	            "sId": "506243051223",
+	            "sAddr": "서울",
+	            "sPostNo": "515365",
+	            "sCard": "6666555522223333",
+	            "sCustom": "3855601"
+	        }, {
+	            "sName": "김수연",
+	            "sMoney": "3000",
+	            "sPhone": "0262642080",
+	            "sId": "2118204825",
+	            "sAddr": "경기",
+	            "sPostNo": "412132",
+	            "sCard": "9999888855552222",
+	            "sCustom": "2698801"
+	        }, {
+	            "sName": "정은지",
+	            "sMoney": "3000",
+	            "sPhone": "0261254045",
+	            "sId": "1298261319",
+	            "sAddr": "서울",
+	            "sPostNo": "355111",
+	            "sCard": "3333444455556666",
+	            "sCustom": "2698801"
+	        }, {
+	            "sName": "정창호",
+	            "sMoney": "2700",
+	            "sPhone": "022222222",
+	            "sId": "507142063425",
+	            "sAddr": "서울",
+	            "sPostNo": "512321",
+	            "sCard": "4444222211113255",
+	            "sCustom": "1897501"
+	        }, {
+	            "sName": "김대현",
+	            "sMoney": "3300",
+	            "sPhone": "01098415521",
+	            "sId": "2098200597",
+	            "sAddr": "서울",
+	            "sPostNo": "154234",
+	            "sCard": "5641122315415133",
+	            "sCustom": "2709801"
+	        }, {
+	            "sName": "안남주",
+	            "sMoney": "3800",
+	            "sPhone": "0435746521",
+	            "sId": "5068272842",
+	            "sAddr": "서울",
+	            "sPostNo": "5416570",
+	            "sCard": "8584154122235565",
+	            "sCustom": "4891410"
+	        }, {
+	            "sName": "이민수",
+	            "sMoney": "3800",
+	            "sPhone": "0545615477",
+	            "sId": "1298263035",
+	            "sAddr": "경기",
+	            "sPostNo": "741351",
+	            "sCard": "3554455516545665",
+	            "sCustom": "3845001"
+	        }, {
+	            "sName": "최갑석",
+	            "sMoney": "3800",
+	            "sPhone": "025555501",
+	            "sId": "410102263574",
+	            "sAddr": "경기",
+	            "sPostNo": "256165",
+	            "sCard": "5546555111415351",
+	            "sCustom": "3500701"
+	        }, {
+	            "sName": "김태헌",
+	            "sMoney": "3700",
+	            "sPhone": "01065840714",
+	            "sId": "4098272390",
+	            "sAddr": "경기",
+	            "sPostNo": "984561",
+	            "sCard": "5655154415412335",
+	            "sCustom": "3489001"
+	        }, {
+	            "sName": "박정석",
+	            "sMoney": "3200",
+	            "sPhone": "0423522541",
+	            "sId": "2118208651",
+	            "sAddr": "서울",
+	            "sPostNo": "137765",
+	            "sCard": "9999888855552222",
+	            "sCustom": "2885001"
+	        }, {
+	            "sName": "권기윤",
+	            "sMoney": "3700",
+	            "sPhone": "0335841152",
+	            "sId": "703301678921",
+	            "sAddr": "경기",
+	            "sPostNo": "561465",
+	            "sCard": "3333444455556666",
+	            "sCustom": "3450101"
+	        }, {
+	            "sName": "김승운",
+	            "sMoney": "3900",
+	            "sPhone": "0325889885",
+	            "sId": "206232384536",
+	            "sAddr": "경기",
+	            "sPostNo": "846315",
+	            "sCard": "4444222211113255",
+	            "sCustom": "3505701"
+	        }, {
+	            "sName": "이해영",
+	            "sMoney": "2300",
+	            "sPhone": "01015368874",
+	            "sId": "1298261319",
+	            "sAddr": "경기",
+	            "sPostNo": "446123",
+	            "sCard": "5641122315415133",
+	            "sCustom": "1800801"
+	        }]
+	    },
+	    doAction: function() {
+	        mySheet.LoadSearchData(this.data, {
+	            Sync: 1
+	        });
+	    }
+	};
+	ib.initialize();
+
+	// jsfiddle에서 ib 접근을 위해 window에 등록
+	window.ib = ib;
+</script>
+</body>
+</html>
