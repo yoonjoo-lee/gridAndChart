@@ -17,5 +17,6 @@
 
 <h2>Â÷Æ®</h2>
 <input type="button" value="chartjs" onclick="location.href='<%=request.getContextPath() %>/chart/chartjs.jsp'">
+<input type="button" value="apexChart" onclick="location.href='<%=request.getContextPath() %>/chart/apexChart.jsp'">
 </body>
 </html>
