@@ -20,5 +20,6 @@
 <input type="button" value="apexChart" onclick="location.href='<%=request.getContextPath() %>/chart/apexChart.jsp'">
 <input type="button" value="dygraphs" onclick="location.href='<%=request.getContextPath() %>/chart/dygraphs.jsp'">
 <input type="button" value="uplot" onclick="location.href='<%=request.getContextPath() %>/chart/uplot.jsp'">
+<input type="button" value="d3js" onclick="location.href='<%=request.getContextPath() %>/chart/d3js.jsp'">
 </body>
 </html>
