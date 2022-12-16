@@ -21,5 +21,6 @@
 <input type="button" value="dygraphs" onclick="location.href='<%=request.getContextPath() %>/chart/dygraphs.jsp'">
 <input type="button" value="uplot" onclick="location.href='<%=request.getContextPath() %>/chart/uplot.jsp'">
 <input type="button" value="d3js" onclick="location.href='<%=request.getContextPath() %>/chart/d3js.jsp'">
+<input type="button" value="jqplot" onclick="location.href='<%=request.getContextPath() %>/chart/jqplot.jsp'">
 </body>
 </html>
