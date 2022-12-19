@@ -100,7 +100,8 @@ img {
       <div class="card-body">
         <h5 class="card-title">chartjs</h5>
         <p class="card-text">제작자: 2013년 닉 다우니가 개발 후, 현재 커뮤니티에 의해 관리되고 있음</p>
-		<a href="<%=request.getContextPath() %>/chart/chartjs.jsp" class="btn btn-primary">데모</a>
+		<a href="<%=request.getContextPath() %>/chart/demoChartjs.jsp" class="btn btn-primary">데모</a>
+		<a href="<%=request.getContextPath() %>/chart/infoChartjs.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
@@ -110,7 +111,8 @@ img {
       <div class="card-body">
         <h5 class="card-title">apexCharts</h5>
         <p class="card-text">제작자: </p>
-        <a href="<%=request.getContextPath() %>/chart/apexChart.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/chart/demoApexCharts.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/chart/infoApexCharts.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
@@ -120,7 +122,8 @@ img {
       <div class="card-body">
         <h5 class="card-title">dygraphs</h5>
         <p class="card-text">제작자: </p>
-        <a href="<%=request.getContextPath() %>/chart/dygraphs.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/chart/demoDygraphs.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/chart/infoDygraphs.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
@@ -130,7 +133,8 @@ img {
       <div class="card-body">
         <h5 class="card-title">uplot</h5>
         <p class="card-text">제작자: </p>
-        <a href="<%=request.getContextPath() %>/chart/uplot.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/chart/demoUPlot.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/chart/infoUPlot.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
@@ -140,7 +144,8 @@ img {
       <div class="card-body">
         <h5 class="card-title">d3js</h5>
         <p class="card-text">제작자: javascript 라이브러리</p>
-        <a href="<%=request.getContextPath() %>/chart/d3js.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/chart/demoD3js.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/chart/infoD3js.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
@@ -150,7 +155,8 @@ img {
       <div class="card-body">
         <h5 class="card-title">jqplot</h5>
         <p class="card-text">제작자: </p>
-        <a href="<%=request.getContextPath() %>/chart/jqplot.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/chart/demoJQPlot.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/chart/infoJQPlot.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
