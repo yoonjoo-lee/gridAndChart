@@ -38,7 +38,8 @@ img {
       <div class="card-body">
         <h5 class="card-title">toastUI</h5>
         <p class="card-text">제작자: NHN</p>
-		<a href="<%=request.getContextPath() %>/grid/toastUI.jsp" class="btn btn-primary">데모</a>
+		<a href="<%=request.getContextPath() %>/grid/demoToastUI.jsp" class="btn btn-primary">데모</a>
+		<a href="<%=request.getContextPath() %>/grid/infoToastUI.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
@@ -48,7 +49,8 @@ img {
       <div class="card-body">
         <h5 class="card-title">JUI</h5>
         <p class="card-text">제작자: 제니퍼소프트</p>
-        <a href="<%=request.getContextPath() %>/grid/jUI.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/grid/demoJUI.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/grid/infoJUI.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
@@ -58,7 +60,8 @@ img {
       <div class="card-body">
         <h5 class="card-title">kendoUI</h5>
         <p class="card-text">제작자: </p>
-        <a href="<%=request.getContextPath() %>/grid/kendoUI.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/grid/demoKendoUI.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/grid/infoKendoUI.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
@@ -68,7 +71,8 @@ img {
       <div class="card-body">
         <h5 class="card-title">IBSheet</h5>
         <p class="card-text">제작자: </p>
-        <a href="<%=request.getContextPath() %>/grid/ibSheet.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/grid/demoIBSheet.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/grid/infoIBSheet.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
@@ -78,7 +82,8 @@ img {
       <div class="card-body">
         <h5 class="card-title">tabulator</h5>
         <p class="card-text">제작자: </p>
-        <a href="<%=request.getContextPath() %>/grid/tabulator.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/grid/demoTabulator.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/grid/infoTabulator.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
