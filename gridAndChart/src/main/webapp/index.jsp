@@ -14,7 +14,7 @@ text-align: center;
 vertical-align: text-bottom;
 }
 h1{
-padding: 2em;
+padding: 1em;
 }
 #typeOfOpensource{
 padding-bottom:2em;
@@ -27,10 +27,10 @@ img {
 </style>
 </head>
 <body>
-<h1>오픈소스</h1>
+<h1><b>오픈소스</b></h1>
 
 <div id="typeOfOpensource">
-<h2>그리드</h2> 
+<h2><b>그리드</b></h2> 
 <div class="row row-cols-1 row-cols-md-5 g-4">
   <div class="col">
     <div class="card">
@@ -44,7 +44,7 @@ img {
   </div>
   <div class="col">
     <div class="card">
-      <img src="<%=request.getContextPath() %>/image/kendoUI.PNG" class="card-img-top" alt="...">
+      <img src="<%=request.getContextPath() %>/image/JUI.PNG" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">JUI</h5>
         <p class="card-text">제작자: 제니퍼소프트</p>
@@ -54,30 +54,30 @@ img {
   </div>
   <div class="col">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="<%=request.getContextPath() %>/image/kendoUI2.PNG" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">kendoUI</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text">제작자: </p>
         <a href="<%=request.getContextPath() %>/grid/kendoUI.jsp" class="btn btn-primary">데모</a>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="<%=request.getContextPath() %>/image/IBSheet.PNG" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">IBSheet</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">제작자: </p>
         <a href="<%=request.getContextPath() %>/grid/ibSheet.jsp" class="btn btn-primary">데모</a>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="<%=request.getContextPath() %>/image/tabulator.PNG" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">tabulator</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">제작자: </p>
         <a href="<%=request.getContextPath() %>/grid/tabulator.jsp" class="btn btn-primary">데모</a>
       </div>
     </div>
@@ -92,13 +92,76 @@ img {
 </div>
 
 <div id="typeOfOpensource">
-<h2>차트</h2>
-<button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/chartjs.jsp'">chartjs</button>
-<button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/apexChart.jsp'">apexChart</button>
-<button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/dygraphs.jsp'">dygraphs</button>
-<button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/uplot.jsp'">uplot</button>
-<button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/d3js.jsp'">d3js</button>
-<button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/jqplot.jsp'">jqplot</button>
+<h2><b>차트</b></h2>
+<div class="row row-cols-1 row-cols-md-6 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="<%=request.getContextPath() %>/image/chartjs.PNG" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">chartjs</h5>
+        <p class="card-text">제작자: 2013년 닉 다우니가 개발 후, 현재 커뮤니티에 의해 관리되고 있음</p>
+		<a href="<%=request.getContextPath() %>/chart/chartjs.jsp" class="btn btn-primary">데모</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="<%=request.getContextPath() %>/image/apexcharts.PNG" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">apexCharts</h5>
+        <p class="card-text">제작자: </p>
+        <a href="<%=request.getContextPath() %>/chart/apexChart.jsp" class="btn btn-primary">데모</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="<%=request.getContextPath() %>/image/dygraphs.PNG" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">dygraphs</h5>
+        <p class="card-text">제작자: </p>
+        <a href="<%=request.getContextPath() %>/chart/dygraphs.jsp" class="btn btn-primary">데모</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="<%=request.getContextPath() %>/image/uplot.PNG" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">uplot</h5>
+        <p class="card-text">제작자: </p>
+        <a href="<%=request.getContextPath() %>/chart/uplot.jsp" class="btn btn-primary">데모</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="<%=request.getContextPath() %>/image/d3js.PNG" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">d3js</h5>
+        <p class="card-text">제작자: javascript 라이브러리</p>
+        <a href="<%=request.getContextPath() %>/chart/d3js.jsp" class="btn btn-primary">데모</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="<%=request.getContextPath() %>/image/jqplot.PNG" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">jqplot</h5>
+        <p class="card-text">제작자: </p>
+        <a href="<%=request.getContextPath() %>/chart/jqplot.jsp" class="btn btn-primary">데모</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%-- <button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/chartjs.jsp'">chartjs</button> --%>
+<%-- <button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/apexChart.jsp'">apexChart</button> --%>
+<%-- <button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/dygraphs.jsp'">dygraphs</button> --%>
+<%-- <button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/uplot.jsp'">uplot</button> --%>
+<%-- <button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/d3js.jsp'">d3js</button> --%>
+<%-- <button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/jqplot.jsp'">jqplot</button> --%>
 </div>
 
 </body>
