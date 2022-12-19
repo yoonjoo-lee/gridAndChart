@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1>tabulator</h1>
+<h2>장점</h2> 
 
+<h2>단점</h2>
 </body>
 </html>
