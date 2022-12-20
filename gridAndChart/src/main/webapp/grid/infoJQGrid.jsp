@@ -7,8 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>IBSheet</h1>
+<h1>JQGrid</h1>
 <h2>장점</h2>
+페이징, 정렬 기능 제공
 <h2>단점</h2>
 </body>
 </html>

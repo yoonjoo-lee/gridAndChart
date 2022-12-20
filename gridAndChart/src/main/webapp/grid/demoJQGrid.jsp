@@ -5,14 +5,16 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ui.jqgrid.css"/>
 
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/grid.locale-kr.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.jqGrid.min.js"></script>
 
 </head>
 <body>
+<h1>JQGrid</h1>
 <table id="jqGrid"></table>
 <div id="gridpager"></div>
   

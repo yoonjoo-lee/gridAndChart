@@ -60,23 +60,23 @@ font-weight:bold;
   </div>
   <div class="col">
     <div class="card">
-      <img src="<%=request.getContextPath() %>/image/kendoUI2.PNG" class="card-img-top" alt="...">
+      <img src="" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">kendoUI</h5>
-        <p class="card-text">제작자: </p>
-        <a href="<%=request.getContextPath() %>/grid/demoKendoUI.jsp" class="btn btn-primary">데모</a>
-        <a href="<%=request.getContextPath() %>/grid/infoKendoUI.jsp" class="btn btn-primary">장단점</a>
+        <h5 class="card-title">JQGrid</h5>
+        <p class="card-text">jQuery 라이브러리</p>
+        <a href="<%=request.getContextPath() %>/grid/demoJQGrid.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/grid/infoJQGrid.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="<%=request.getContextPath() %>/image/IBSheet.PNG" class="card-img-top" alt="...">
+      <img src="" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">IBSheet</h5>
+        <h5 class="card-title">DataTables</h5>
         <p class="card-text">제작자: </p>
-        <a href="<%=request.getContextPath() %>/grid/demoIBSheet.jsp" class="btn btn-primary">데모</a>
-        <a href="<%=request.getContextPath() %>/grid/infoIBSheet.jsp" class="btn btn-primary">장단점</a>
+        <a href="<%=request.getContextPath() %>/grid/demoDataTables.jsp" class="btn btn-primary">데모</a>
+        <a href="<%=request.getContextPath() %>/grid/infoDataTables.jsp" class="btn btn-primary">장단점</a>
       </div>
     </div>
   </div>
@@ -94,6 +94,7 @@ font-weight:bold;
 </div>
 
 <button type="button" class="btn btn-outline-info" onclick="location.href='<%=request.getContextPath() %>/grid/demoJQGrid.jsp'">JQGrid</button>
+<button type="button" class="btn btn-outline-info" onclick="location.href='<%=request.getContextPath() %>/grid/demoDataTables.jsp'">DataTables</button>
 <%-- <button type="button" class="btn btn-outline-info" onclick="location.href='<%=request.getContextPath() %>/grid/toastUI.jsp'">toastUI</button> --%>
 <%-- <button type="button" class="btn btn-outline-info" onclick="location.href='<%=request.getContextPath() %>/grid/jUI.jsp'">JUI</button> --%>
 <%-- <button type="button" class="btn btn-outline-info" onclick="location.href='<%=request.getContextPath() %>/grid/kendoUI.jsp'">kendoUI</button> --%>
