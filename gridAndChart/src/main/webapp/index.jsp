@@ -60,7 +60,7 @@ font-weight:bold;
   </div>
   <div class="col">
     <div class="card">
-      <img src="" class="card-img-top" alt="...">
+      <img src="<%=request.getContextPath() %>/image/jqgrid.PNG" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">JQGrid</h5>
         <p class="card-text">jQuery 라이브러리</p>
@@ -71,7 +71,7 @@ font-weight:bold;
   </div>
   <div class="col">
     <div class="card">
-      <img src="" class="card-img-top" alt="...">
+      <img src="<%=request.getContextPath() %>/image/datatables.PNG" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">DataTables</h5>
         <p class="card-text">제작자: </p>
@@ -93,8 +93,8 @@ font-weight:bold;
   </div>
 </div>
 
-<button type="button" class="btn btn-outline-info" onclick="location.href='<%=request.getContextPath() %>/grid/demoJQGrid.jsp'">JQGrid</button>
-<button type="button" class="btn btn-outline-info" onclick="location.href='<%=request.getContextPath() %>/grid/demoDataTables.jsp'">DataTables</button>
+<%-- <button type="button" class="btn btn-outline-info" onclick="location.href='<%=request.getContextPath() %>/grid/demoJQGrid.jsp'">JQGrid</button> --%>
+<%-- <button type="button" class="btn btn-outline-info" onclick="location.href='<%=request.getContextPath() %>/grid/demoDataTables.jsp'">DataTables</button> --%>
 <%-- <button type="button" class="btn btn-outline-info" onclick="location.href='<%=request.getContextPath() %>/grid/toastUI.jsp'">toastUI</button> --%>
 <%-- <button type="button" class="btn btn-outline-info" onclick="location.href='<%=request.getContextPath() %>/grid/jUI.jsp'">JUI</button> --%>
 <%-- <button type="button" class="btn btn-outline-info" onclick="location.href='<%=request.getContextPath() %>/grid/kendoUI.jsp'">kendoUI</button> --%>
