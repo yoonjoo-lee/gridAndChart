@@ -31,7 +31,7 @@ font-weight:bold;
 </style>
 </head>
 <body>
-<h1><b>오픈소스</b></h1>
+<h1><b>그리드, 차트 오픈소스 비교</b></h1>
 
 <div id="typeOfOpensource">
 <h2><b>그리드</b></h2> 

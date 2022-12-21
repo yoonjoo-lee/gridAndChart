@@ -24,7 +24,6 @@
 </div>
 
 <script>
-
 function getSize() {
   const e = document.getElementById("index-2-view");
   const r = {
