@@ -12,6 +12,9 @@
 <h1>dygraphs</h1>
 
 <div id="graphdiv"></div>
+
+
+
 <script type="text/javascript">
   g = new Dygraph(
 
