@@ -34,7 +34,7 @@ font-weight:bold;
 <h1><b>그리드, 차트 오픈소스 비교</b></h1>
 
 <div id="typeOfOpensource">
-<h2><b>그리드</b></h2> 
+<h2><b>Grid</b></h2> 
 <div class="row row-cols-1 row-cols-md-5 g-4">
   <div class="col">
     <div class="card">
@@ -103,7 +103,7 @@ font-weight:bold;
 </div>
 
 <div id="typeOfOpensource">
-<h2><b>차트</b></h2>
+<h2><b>Chart</b></h2>
 <div class="row row-cols-1 row-cols-md-5 g-4">
   <div class="col">
     <div class="card">
@@ -200,28 +200,28 @@ font-weight:bold;
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card">
-      <img src="<%=request.getContextPath() %>/image/" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">dygraphs</h5>
-        <p class="card-text">제작자: </p>
-        <a href="<%=request.getContextPath() %>/chart/" class="btn btn-primary">데모</a>
-        <a href="<%=request.getContextPath() %>/chart/" class="btn btn-primary">장단점</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="<%=request.getContextPath() %>/image/" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">uplot</h5>
-        <p class="card-text">제작자: </p>
-        <a href="<%=request.getContextPath() %>/chart/" class="btn btn-primary">데모</a>
-        <a href="<%=request.getContextPath() %>/chart/" class="btn btn-primary">장단점</a>
-      </div>
-    </div>
-  </div>
+<!--   <div class="col"> -->
+<!--     <div class="card"> -->
+<%--       <img src="<%=request.getContextPath() %>/image/" class="card-img-top" alt="..."> --%>
+<!--       <div class="card-body"> -->
+<!--         <h5 class="card-title"></h5> -->
+<!--         <p class="card-text">제작자: </p> -->
+<%--         <a href="<%=request.getContextPath() %>/chart/" class="btn btn-primary">데모</a> --%>
+<%--         <a href="<%=request.getContextPath() %>/chart/" class="btn btn-primary">장단점</a> --%>
+<!--       </div> -->
+<!--     </div> -->
+<!--   </div> -->
+<!--   <div class="col"> -->
+<!--     <div class="card"> -->
+<%--       <img src="<%=request.getContextPath() %>/image/" class="card-img-top" alt="..."> --%>
+<!--       <div class="card-body"> -->
+<!--         <h5 class="card-title"></h5> -->
+<!--         <p class="card-text">제작자: </p> -->
+<%--         <a href="<%=request.getContextPath() %>/chart/" class="btn btn-primary">데모</a> --%>
+<%--         <a href="<%=request.getContextPath() %>/chart/" class="btn btn-primary">장단점</a> --%>
+<!--       </div> -->
+<!--     </div> -->
+<!--   </div> -->
 </div>
 
 <%-- <button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/demoC3js.jsp'">C3</button> --%>

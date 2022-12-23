@@ -12,11 +12,16 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jqplot.pieRenderer.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jqplot.donutRenderer.js"></script>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/jquery.jqplot.css" />
-
+<style>
+div{
+display: inline-block;
+}
+</style>
 </head>
 <body>
 <h1>jqPlot</h1>
 <div id="chart1" style="width:600px; height:600px;"></div>
+<div id="chart2" style="width:600px; height:600px;"></div>
 
 <script>
 $(document).ready(function(){
@@ -38,6 +43,8 @@ $(document).ready(function(){
 	      legend: { show:true, location: 'e' }
 	    }
 	  );
+	  
+	  var plot2 = $.jqplot ('chart2', [[3,7,9,1,5,3,8,2,5]]);
 	});
 </script>
 </body>

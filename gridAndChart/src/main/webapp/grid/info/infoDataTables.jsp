@@ -8,6 +8,7 @@
 </head>
 <body>
 <h1>DataTables</h1>
+<p>사이트: <a href="https://datatables.net/">https://datatables.net/</a></p>
 <h2>장점</h2>
 * 표 table에 다음과 같은 기능을 빠르게 구현, 추가할 수 있다.<br>
 - 표시 건수 제어 기능<br>
