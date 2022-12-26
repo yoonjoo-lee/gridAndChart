@@ -44,6 +44,7 @@ font-weight:bold;
         <p class="card-text">제작자: NHN</p>
 		<a href="<%=request.getContextPath() %>/grid/demo/demoToastUI.jsp" class="btn btn-primary">데모</a>
 		<a href="<%=request.getContextPath() %>/grid/info/infoToastUI.jsp" class="btn btn-primary">장단점</a>
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toastUI">장단점</button>
       </div>
     </div>
   </div>
@@ -55,6 +56,7 @@ font-weight:bold;
         <p class="card-text">제작자: 제니퍼소프트</p>
         <a href="<%=request.getContextPath() %>/grid/demo/demoJUI.jsp" class="btn btn-primary">데모</a>
         <a href="<%=request.getContextPath() %>/grid/info/infoJUI.jsp" class="btn btn-primary">장단점</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#JUI">장단점</button>
       </div>
     </div>
   </div>
@@ -66,6 +68,7 @@ font-weight:bold;
         <p class="card-text">jQuery 라이브러리</p>
         <a href="<%=request.getContextPath() %>/grid/demo/demoJQGrid.jsp" class="btn btn-primary">데모</a>
         <a href="<%=request.getContextPath() %>/grid/info/infoJQGrid.jsp" class="btn btn-primary">장단점</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#JQGrid">장단점</button>
       </div>
     </div>
   </div>
@@ -77,6 +80,7 @@ font-weight:bold;
         <p class="card-text">제작자: </p>
         <a href="<%=request.getContextPath() %>/grid/demo/demoDataTables.jsp" class="btn btn-primary">데모</a>
         <a href="<%=request.getContextPath() %>/grid/info/infoDataTables.jsp" class="btn btn-primary">장단점</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#DataTables">장단점</button>
       </div>
     </div>
   </div>
@@ -231,6 +235,93 @@ font-weight:bold;
 <%-- <button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/uplot.jsp'">uplot</button> --%>
 <%-- <button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/d3js.jsp'">d3js</button> --%>
 <%-- <button type="button" class="btn btn-outline-warning" onclick="location.href='<%=request.getContextPath() %>/chart/jqplot.jsp'">jqplot</button> --%>
+</div>
+
+<!-- toastUI -->
+<div class="modal fade" id="toastUI" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">toastUI</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       	<p>사이트: <a href="https://ui.toast.com/">https://ui.toast.com/</a></p>
+		<h2>장점</h2>
+		셀 커스텀 다양하게 가능<br>
+		많은 데이터를 출력할 때 퍼포먼스 양호<br>
+		깔끔하고 문서와 데모가 잘 만들어져 있어서 쉽게 컨트롤 가능<br>
+		차트를 포함한 다양한 컴포넌트가 있음<br>
+		
+		<h2>단점</h2>
+		2천건 이상 데이터가 들어간 경우 사용 불가<br>
+		다른 테이블 라이브러리에 비해 방대한 API로 인한 러닝커브가 큼<br><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JUI -->
+<div class="modal fade" id="JUI" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">JUI</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       	<p>사이트: <a href="http://jui.io/">http://jui.io/</a></p>
+		<h2>장점</h2>
+		장점장점
+		<h2>단점</h2>
+		2천건 이상의 데이터가 들어간 경우 사용 불가<br><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JQGrid -->
+<div class="modal fade" id="JQGrid" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">JQGrid</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       	<p>사이트: <a href="http://www.trirand.com/blog/">http://www.trirand.com/blog/</a></p>
+		jqGrid는 jQuery라이브러리를 이용한 Grid Plugin.<br>
+		jqGrid는 웹에서 테이블 형식의 데이터를 표시하고 조작을 위한 Ajax기반 자바스크립트 컨트롤러
+		<h2>장점</h2>
+		페이징, 정렬 기능 제공<br>
+		jQuery-UI에서 제공하는 CSS로 자기 입맛에 맞는 디자인을 할 수 있음.
+		<h2>단점</h2>
+		버전 4.7부터 유료화 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- DataTables -->
+<div class="modal fade" id="DataTables" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">DataTables</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       	<p>사이트: <a href="https://datatables.net/">https://datatables.net/</a></p>
+		<h2>장점</h2>
+		* 표 table에 다음과 같은 기능을 빠르게 구현, 추가할 수 있다.<br>
+		- 표시 건수 제어 기능<br>
+		- 페이징 기능<br>
+		- 정렬 기능<br>
+		- 필터 기능 <br>
+		- 스크롤 기능<br>
+		* 서버에서 데이터(JSON)를 받아 표시할 수 있다.<br>
+		* 표 디자인이 깔끔하다(Bootstrap 디자인에도 맞출 수 있음)<br>
+		<h2>단점</h2>
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>

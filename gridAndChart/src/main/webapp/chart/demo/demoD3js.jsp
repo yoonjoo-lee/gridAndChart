@@ -12,7 +12,7 @@
 <h1>d3.js</h1>
 <div class="one-graph"></div>
 <script>
-  var w = 250, h = 250;
+  var w = 400, h = 400;
   var graphData = [50, 30, 12, 5, 3];
   var colorData = ["red", "orange", "yellow", "blue", "purple"];
   var pie = d3.pie();
