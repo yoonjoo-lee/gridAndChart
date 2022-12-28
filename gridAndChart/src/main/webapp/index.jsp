@@ -39,21 +39,52 @@ font-weight:bold;
 </style>
 </head>
 <body>
-<header><h1>그리드, 차트 오픈소스 비교</h1></header>
-<nav>
-<div class="collapse" id="navbarToggleExternalContent">
-  <div class="bg-dark p-4">
-    <h5 class="text-white h4">Collapsed content</h5>
-    <span class="text-muted">Toggleable via the navbar brand.</span>
-  </div>
-</div>
-<nav class="navbar navbar-dark bg-dark">
+<!-- <div class="collapse" id="navbarToggleExternalContent"> -->
+<!--   <div class="bg-dark p-4"> -->
+<!--     <h5 class="text-white h4">Collapsed content</h5> -->
+<!--     <span class="text-muted">Toggleable via the navbar brand.</span> -->
+<!--   </div> -->
+<!-- </div> -->
+<!-- <nav class="navbar navbar-dark bg-dark"> -->
+<!--   <div class="container-fluid"> -->
+<!--     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+<!--       <span class="navbar-toggler-icon"></span> -->
+<!--     </button> -->
+<!--   </div> -->
+<!-- </nav> -->
+
+<div class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">grid&chart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Grid</a>
+        <a class="nav-link" href="#">Chart</a>
+<!--         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+      </div>
+    </div>
   </div>
-</nav>
+</div><header>
+<h1>그리드, 차트 오픈소스 비교</h1>
+</header>
+<nav>
+<!-- <div class="collapse" id="navbarToggleExternalContent"> -->
+<!--   <div class="bg-dark p-4"> -->
+<!--     <h5 class="text-white h4">Collapsed content</h5> -->
+<!--     <span class="text-muted">Toggleable via the navbar brand.</span> -->
+<!--   </div> -->
+<!-- </div> -->
+<!-- <nav class="navbar navbar-dark bg-dark"> -->
+<!--   <div class="container-fluid"> -->
+<!--     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+<!--       <span class="navbar-toggler-icon"></span> -->
+<!--     </button> -->
+<!--   </div> -->
+<!-- </nav> -->
 </nav>
 <section>
 <div id="typeOfOpensource">
@@ -350,7 +381,10 @@ font-weight:bold;
 		- 스크롤 기능<br>
 		* 서버에서 데이터(JSON)를 받아 표시할 수 있다.<br>
 		* 표 디자인이 깔끔하다(Bootstrap 디자인에도 맞출 수 있음)<br>
+		* 행에서와 popup창에서 데이터를 생성, 수정 가능<br>
 		<h2>단점</h2>
+		* jquery datatables 라이브러리만 무료 -> 생성, 수정 삭제 기능이 없음.<br>
+		* jquery datatables editor 라이브러리 유료 -> 생성, 수정, 삭제 가능한 		
       </div>
     </div>
   </div>
