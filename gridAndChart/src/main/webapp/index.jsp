@@ -400,8 +400,9 @@ font-weight:bold;
       <div class="modal-body">
        	<p>사이트: <a href="https://tabulator.info/">https://tabulator.info/</a></p>
 		<h2>장점</h2> 
-		
+		전부 무료
 		<h2>단점</h2>
+		팝업 창으로 데이터를 생성, 수정하는 기능이 없다.
       </div>
     </div>
   </div>
