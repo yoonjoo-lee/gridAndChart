@@ -309,7 +309,7 @@ font-weight:bold;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       	<p>사이트: <a href="https://ui.toast.com/">https://ui.toast.com/</a></p>
+       	<p>사이트: <a href="https://ui.toast.com/" target="_blank">https://ui.toast.com/</a></p>
 		<h2>장점</h2>
 		셀 커스텀 다양하게 가능<br>
 		많은 데이터를 출력할 때 퍼포먼스 양호<br>
@@ -332,7 +332,7 @@ font-weight:bold;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       	<p>사이트: <a href="http://jui.io/">http://jui.io/</a></p>
+       	<p>사이트: <a href="http://jui.io/" target="_blank">http://jui.io/</a></p>
 		<h2>장점</h2>
 		장점장점
 		<h2>단점</h2>
@@ -350,7 +350,7 @@ font-weight:bold;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       	<p>사이트: <a href="http://www.trirand.com/blog/">http://www.trirand.com/blog/</a></p>
+       	<p>사이트: <a href="http://www.trirand.com/blog/" target="_blank">http://www.trirand.com/blog/</a></p>
 		jqGrid는 jQuery라이브러리를 이용한 Grid Plugin.<br>
 		jqGrid는 웹에서 테이블 형식의 데이터를 표시하고 조작을 위한 Ajax기반 자바스크립트 컨트롤러
 		<h2>장점</h2>
@@ -371,7 +371,7 @@ font-weight:bold;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       	<p>사이트: <a href="https://datatables.net/">https://datatables.net/</a></p>
+       	<p>사이트: <a href="https://datatables.net/" target="_blank">https://datatables.net/</a></p>
 		<h2>장점</h2>
 		* 표 table에 다음과 같은 기능을 빠르게 구현, 추가할 수 있다.<br>
 		- 표시 건수 제어 기능<br>
@@ -398,7 +398,7 @@ font-weight:bold;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       	<p>사이트: <a href="https://tabulator.info/">https://tabulator.info/</a></p>
+       	<p>사이트: <a href="https://tabulator.info/" target="_blank">https://tabulator.info/</a></p>
 		<h2>장점</h2> 
 		전부 무료
 		<h2>단점</h2>
@@ -419,7 +419,7 @@ font-weight:bold;
        	<p>8개의 차트 유형을 지원하는 데이터 시각화를 위한 오픈 소스 자바스크립트 라이브러리. <br>
 		런던의 웹 개발자 닉 다우니가 2013년에 개발했으며 현재는 커뮤니티에 의해 관리되고 있다. <br>
 		일반적인 간단한 차트 그릴 때 유용<br>
-		사이트: <a href="https://www.chartjs.org/docs/latest/">https://www.chartjs.org/docs/latest/</a></p>
+		사이트: <a href="https://www.chartjs.org/docs/latest/" target="_blank">https://www.chartjs.org/docs/latest/</a></p>
 		
 		
 		<h2>장점</h2>
@@ -443,7 +443,7 @@ font-weight:bold;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       	<p>사이트: <a href="https://apexcharts.com/">https://apexcharts.com/</a></p>
+       	<p>사이트: <a href="https://apexcharts.com/" target="_blank">https://apexcharts.com/</a></p>
 		<h2>장점</h2>
 		ApexCharts는 콘텐츠 어플에 사용하기 적합한 디자인으로 톡톡 튀는 스타일이다.<br>
 		사용하기 쉬움.
@@ -461,7 +461,7 @@ font-weight:bold;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       	<p>사이트: <a href="https://dygraphs.com/">https://dygraphs.com/</a></p>
+       	<p>사이트: <a href="https://dygraphs.com/" target="_blank">https://dygraphs.com/</a></p>
 		<h2>장점</h2>
 		차트명에 있는 dy라는 철자가 dynamic을 의미하는 만큼 역동적인 그래프를 만들어내기에 적합.<br>
 		사용자의 이벤트를 차트에 반영하는 기능을 제공<br>
@@ -482,7 +482,7 @@ font-weight:bold;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       	<p>사이트: <a href="https://github.com/leeoniya/uPlot">https://github.com/leeoniya/uPlot</a></p>
+       	<p>사이트: <a href="https://github.com/leeoniya/uPlot" target="_blank">https://github.com/leeoniya/uPlot</a></p>
 		정말 간단한 막대곡선과 꺾은 선 그래프 형식 위주(미시적으로 변하는 자료에 접목 좋음)
 		<h2>장점</h2>
 		속도 빠름, 용량 작음<br>
@@ -501,7 +501,7 @@ font-weight:bold;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       	<p>사이트: <a href="http://www.jqplot.com/">http://www.jqplot.com/</a></p>
+       	<p>사이트: <a href="http://www.jqplot.com/" target="_blank">http://www.jqplot.com/</a></p>
 		jqChart는 과도한 그래픽을 사용하지 않고, 단색계통으로 차분한 느낌이다. 다소 보수적인 분야(의학, 교육, 법)에 어울리며, 클래식한 분위기를 낼 수 있다.<br>
 		순수 jQuery Chart
 		<h2>장점</h2>
@@ -522,7 +522,7 @@ font-weight:bold;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       	<p>사이트: <a href="https://d3js.org/">https://d3js.org/</a></p>
+       	<p>사이트: <a href="https://d3js.org/" target="_blank">https://d3js.org/</a></p>
 		데이터에 기반을 둔 문서를 다룰 수 있는 자바스크립트 기반 라이브러리.<br>
 		HTML, SVG, CSS를 사용해 데이터를 시각적인 결과물로 나타냄.<br>
 		
@@ -545,7 +545,7 @@ font-weight:bold;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       	<p>사이트: <a href="https://c3js.org/">https://c3js.org/</a></p>
+       	<p>사이트: <a href="https://c3js.org/" target="_blank">https://c3js.org/</a></p>
 		<h2>장점</h2>
 		<h2>단점</h2>
       </div>
@@ -561,7 +561,7 @@ font-weight:bold;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       	<p>사이트: <a href="https://developers-dot-devsite-v2-prod.appspot.com/chart">https://developers-dot-devsite-v2-prod.appspot.com/chart</a></p>
+       	<p>사이트: <a href="https://developers-dot-devsite-v2-prod.appspot.com/chart" target="_blank">https://developers-dot-devsite-v2-prod.appspot.com/chart</a></p>
 		<h2>장점</h2>
 		방대한 기능
 		<h2>단점</h2>
